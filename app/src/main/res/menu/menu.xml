@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="今日活动"
+        android:icon="@mipmap/home"
+        android:id="@+id/id_1">
+    </item>
+
+    <item
+        android:title="失物招领"
+        android:icon="@mipmap/lost_and_found"
+        android:id="@+id/id_2">
+    </item>
+
+    <item
+        android:title="我的"
+        android:icon="@mipmap/me"
+        android:id="@+id/id_3">
+    </item>
+</menu>

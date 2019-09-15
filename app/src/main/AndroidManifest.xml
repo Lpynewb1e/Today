@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.Activity">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.example.Activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.Activity.Today.details_activity" />
+        <activity android:name="com.example.Activity.me_take" />
+        <activity android:name="com.example.Activity.add_activity" />
+        <activity android:name="com.example.Activity.Login" />
+        <activity android:name="com.example.Activity.regist" />
+        <activity android:name="com.example.Activity.me_detail" />
+        <activity android:name="com.example.Activity.modify_name" />
+        <activity android:name="com.example.Activity.detail_photo" />
+        <activity android:name="com.example.Activity.take_in" />
+        
+        <provider
+            android:authorities="com.example.Activity"
+            android:name="android.support.v4.content.FileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepath"/>
+        </provider>
+
+    </application>
+
+    <!--相机权限和储存权限-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-feature android:name="android.hardware.camera2"
+        android:required="true"/>
+    
+</manifest>

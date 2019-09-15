@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/l"
+        android:layout_width="match_parent"
+        android:layout_height="38dp">
+
+        <ImageView
+            android:id="@+id/commit_photo"
+            android:layout_width="36dp"
+            android:layout_height="36dp" />
+
+        <TextView
+            android:id="@+id/commit_name"
+            android:layout_width="324dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@id/commit_photo" />
+
+        <TextView
+            android:id="@+id/commit_job_title"
+            android:layout_width="361dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/commit_name"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@id/commit_photo" />
+
+        <ImageView
+            android:id="@+id/commit_like"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/commit_name"
+            android:src="@mipmap/commit_like" />
+
+        <TextView
+            android:id="@+id/commit_like_number"
+            android:layout_width="17dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/commit_like"
+            android:gravity="center"
+            android:text="1" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/commit_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/l"
+        android:layout_marginLeft="38dp" />
+    <RelativeLayout
+        android:layout_below="@id/commit_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="38dp">
+
+        <TextView
+            android:id="@+id/commit_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="123" />
+        <TextView
+            android:id="@+id/jiange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="·"
+            android:layout_toRightOf="@id/commit_time"/>
+        <TextView
+            android:id="@+id/commit_reply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="回复"
+            android:layout_toRightOf="@id/jiange"/>
+    </RelativeLayout>
+</RelativeLayout>

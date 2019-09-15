@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:background="#f5f5f6">
+        <ImageView
+            android:id="@+id/detail_back"
+            android:layout_width="38dp"
+            android:layout_height="26dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/back"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="详细信息"
+            android:gravity="center"
+            android:textSize="20dp"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/MePhotoRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:layout_marginLeft="5dp"
+            android:text="头像"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/MePhoto"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#f5f5f6"/>
+    <RelativeLayout
+        android:id="@+id/MeNameRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:text="名字"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/MeName"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/back"
+            android:text="刘小小"
+            android:gravity="center"
+            android:textSize="20dp"/>
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/right_arrow" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#f5f5f6"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:text="职称"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/MeSubname"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/MeSubnamePhoto"
+            android:text="共青团员"
+            android:gravity="center"
+            android:textSize="20dp"/>
+
+        <ImageView
+            android:id="@+id/MeSubnamePhoto"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/right_arrow" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#f5f5f6"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:text="ID"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/MeId"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/MeIdPhoto"
+            android:text="378691904"
+            android:gravity="center"
+            android:textSize="20dp"/>
+
+        <ImageView
+            android:id="@+id/MeIdPhoto"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/right_arrow" />
+    </RelativeLayout>
+
+
+</LinearLayout>
